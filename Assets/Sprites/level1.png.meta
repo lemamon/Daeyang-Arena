@@ -1,0 +1,388 @@
+fileFormatVersion: 2
+guid: 4ae1fc0a9ef7e4ca7ad75c4065592591
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: level1_0
+    21300002: level1_1
+    21300004: level1_2
+    21300006: level1_3
+    21300008: level1_4
+    21300010: level1_5
+    21300012: level1_6
+    21300014: level1_7
+    21300016: level1_8
+    21300018: level1_9
+    21300020: level1_10
+    21300022: level1_11
+    21300024: level1_12
+    21300026: level1_13
+    21300028: level1_14
+    21300030: level1_15
+    21300032: level1_16
+    21300034: level1_17
+    21300036: level1_18
+    21300038: level1_19
+    21300040: level1_20
+    21300042: level1_21
+    21300044: level1_22
+    21300046: level1_23
+    21300048: level1_24
+    21300050: level1_25
+    21300052: level1_26
+    21300054: level1_27
+    21300056: level1_28
+    21300058: level1_29
+    21300060: level1_30
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: level1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2072
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_1
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 2121
+        width: 259
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_2
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 2132
+        width: 195
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_3
+      rect:
+        serializedVersion: 2
+        x: 2972
+        y: 2113
+        width: 307
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_4
+      rect:
+        serializedVersion: 2
+        x: 3587
+        y: 1434
+        width: 253
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1716
+        width: 43
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_6
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 1821
+        width: 161
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_7
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 1243
+        width: 390
+        height: 780
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_8
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 1854
+        width: 169
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_9
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 1794
+        width: 158
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_10
+      rect:
+        serializedVersion: 2
+        x: 2237
+        y: 1899
+        width: 180
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_11
+      rect:
+        serializedVersion: 2
+        x: 2754
+        y: 1772
+        width: 233
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1299
+        width: 51
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_13
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1626
+        width: 183
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1404
+        width: 147
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_15
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 999
+        width: 664
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_16
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1089
+        width: 135
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_17
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 1228
+        width: 188
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 894
+        width: 28
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_19
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 868
+        width: 477
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_20
+      rect:
+        serializedVersion: 2
+        x: 2803
+        y: 846
+        width: 799
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_21
+      rect:
+        serializedVersion: 2
+        x: 3744
+        y: 343
+        width: 96
+        height: 589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_22
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 812
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_23
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 812
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_24
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 182
+        width: 544
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_25
+      rect:
+        serializedVersion: 2
+        x: 2353
+        y: 313
+        width: 188
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_26
+      rect:
+        serializedVersion: 2
+        x: 3043
+        y: 276
+        width: 454
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 531
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_28
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 0
+        width: 690
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_29
+      rect:
+        serializedVersion: 2
+        x: 2889
+        y: 0
+        width: 375
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1_30
+      rect:
+        serializedVersion: 2
+        x: 3606
+        y: 0
+        width: 234
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
