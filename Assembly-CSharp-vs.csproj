@@ -49,9 +49,12 @@
      <Compile Include="Assets\Kits\Virtual Joystick\VirtualJoystick.cs" />
      <Compile Include="Assets\Kits\Virtual Joystick\VirtualJoystickButton.cs" />
      <Compile Include="Assets\Scripts\ArrowFollow.cs" />
+     <Compile Include="Assets\Scripts\Box.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CameraShake.cs" />
      <Compile Include="Assets\Scripts\Missile.cs" />
+     <Compile Include="Assets\Scripts\Oracle.cs" />
+     <Compile Include="Assets\Scripts\PowerUp.cs" />
      <Compile Include="Assets\Scripts\Swipe.cs" />
      <Compile Include="Assets\Scripts\Vehicle.cs" />
  <Reference Include="UnityEngine.UI">

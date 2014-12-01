@@ -6,6 +6,8 @@ public class ArrowFollow : MonoBehaviour {
 	public GameObject objectToFollow;
 	public Transform objectToAnchorRotation;
 
+	public float margin = 12.0f;
+
 
 	void Start () {
 	
@@ -13,12 +15,15 @@ public class ArrowFollow : MonoBehaviour {
 
 	void FixedUpdate() {
 
-		Vector3 vectorMax = Camera.main.ScreenToWorldPoint( new Vector3(Screen.width, Screen.height, 0));
-		Vector3 vectorMin = Camera.main.ScreenToWorldPoint( new Vector3(0, 0, 0));
+		Vector3 vectorMax = Camera.main.ScreenToWorldPoint( new Vector3(Screen.width - 3*margin, Screen.height - margin, 0));
+		Vector3 vectorMin = Camera.main.ScreenToWorldPoint( new Vector3(margin, margin, 0));
 		Vector3 vector =  new Vector3();
 
-		Debug.Log (vectorMax);
+		if (Input.GetKeyDown (KeyCode.R)) {
 
+			GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
+			temp.transform.position = vectorMax;
+				}
 		if (objectToFollow.transform.position.x > vectorMax.x) {
 			vector.x = vectorMax.x;
 		} else if (objectToFollow.transform.position.x < vectorMin.x) {
