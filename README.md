@@ -1,4 +1,4 @@
-Daeyang-Arena
+Daeyang Arena
 =============
 
-Multiplayer game arena batlle
+Multiplayer game arena battle
