@@ -3,13 +3,23 @@ using System.Collections;
 
 public class Oracle : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+	public float timerToDecision = 1.0f;
+	private float timerToDecisionController = 1.0f;
 	
+	public GameObject box;
+
+	void launchBox () {
+		Vector2 randomPosition = Random.insideUnitCircle * 5;
+
+		Instantiate(box, randomPosition, transform.rotation);
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-		
+		timerToDecision -= Time.deltaTime;
+		if (timerToDecision < 0) {
+			timerToDecision = timerToDecisionController;
+			launchBox ();
+		}
+
 	}
 }

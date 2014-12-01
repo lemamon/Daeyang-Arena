@@ -4,7 +4,7 @@ using System.Collections;
 public class Missile : MonoBehaviour {
 
 	public float speed;
-	public float timerItemLifeCycle;
+	public float timerItemLifeCycle = 1.0f;
 	
 	void Start () {
 		

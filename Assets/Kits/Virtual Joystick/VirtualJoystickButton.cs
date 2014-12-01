@@ -17,9 +17,10 @@ public class VirtualJoystickButton : MonoBehaviour {
 	}
 
 	void OnMouseDown() {
+
 		transform.localScale += new Vector3(0.05f, 0.05f, 0.05f);
-		
 		virtualJoystick.downButton (Button);
+
 		/*
 		if (isOnce) {
 			if (onceController == false) 
@@ -29,6 +30,7 @@ public class VirtualJoystickButton : MonoBehaviour {
 			virtualJoystick.downButton (Button);
 		}
 		*/
+
 	}
 
 	void OnMouseUp () {

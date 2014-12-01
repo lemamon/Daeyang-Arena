@@ -14,6 +14,10 @@ public class VirtualJoystick : MonoBehaviour {
 		buttonPressed = button;
 	}
 
+	public void pressedButton (VirtualJoystickButton.optionsButton button) {
+		buttonPressed = button;
+	}
+
 	public void upButton () {
 		buttonPressed =  VirtualJoystickButton.optionsButton.None;
 	}

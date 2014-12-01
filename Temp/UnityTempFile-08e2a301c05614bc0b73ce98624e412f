@@ -49,5 +49,6 @@
 'Assets/Scripts/PowerUp.cs'
 'Assets/Scripts/Swipe.cs'
 'Assets/Scripts/Vehicle.cs'
+'Assets/Scripts/VehicleCPU.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
