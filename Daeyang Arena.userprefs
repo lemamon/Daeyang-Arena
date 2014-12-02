@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ArrowFollow.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Vehicle.cs">
     <Files>
-      <File FileName="Assets/Scripts/ArrowFollow.cs" Line="18" Column="110" />
+      <File FileName="Assets/Scripts/Oracle.cs" Line="14" Column="34" />
+      <File FileName="Assets/Scripts/VehicleCPU.cs" Line="5" Column="2" />
+      <File FileName="Assets/Scripts/Vehicle.cs" Line="59" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

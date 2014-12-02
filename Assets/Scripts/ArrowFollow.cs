@@ -12,18 +12,19 @@ public class ArrowFollow : MonoBehaviour {
 	
 	}
 
-	void FixedUpdate() {
+	void Update() {
 
+		//Vector3 vectorMax = Camera.main.ScreenToWorldPoint( new Vector3(Screen.width - margin, Screen.height - 4 * margin, 0));
 		Vector3 vectorMax = Camera.main.ScreenToWorldPoint( new Vector3(Screen.width - margin, Screen.height - 4 * margin, 0));
 		Vector3 vectorMin = Camera.main.ScreenToWorldPoint( new Vector3(margin, margin, 0));
 
 		Vector3 vector =  new Vector3();
+		//vector.x = objectToFollow.transform.position.x;
+		//vector.y = objectToFollow.transform.position.y;
 
-		if (Input.GetKeyDown (KeyCode.R)) {
-
-			GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
-			temp.transform.position = vectorMax;
-				}
+		Vector3 vectorDebugStart = new Vector3 (Camera.main.transform.position.x, Camera.main.transform.position.y, 0);
+		Vector3 vectorDebugEnd = new Vector3 (objectToFollow.transform.position.x, objectToFollow.transform.position.y, 0);
+		Debug.DrawLine(vectorDebugStart, vectorDebugEnd, Color.red);
 
 		if (objectToFollow.transform.position.x > vectorMax.x) {
 			vector.x = vectorMax.x;
@@ -36,14 +37,15 @@ public class ArrowFollow : MonoBehaviour {
 		if (objectToFollow.transform.position.y > vectorMax.y) {
 			vector.y = vectorMax.y;
 		}
-		
 		else if (objectToFollow.transform.position.y < vectorMin.y) {
 			vector.y = vectorMin.y;
 		}else {
 			vector.y = objectToFollow.transform.position.y;
 		}
 
-		transform.position = vector;
+		
+		transform.position = vector; 
+		//transform.rotation = Quaternion.Inverse(Camera.main.transform.rotation);
 
 	}
 }

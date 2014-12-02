@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class Box : MonoBehaviour {
-
+	
+	public float timerToLeave = 5.0f;
 	public GameObject item;
 
 	void Start () {
@@ -16,6 +17,9 @@ public class Box : MonoBehaviour {
 	}
 	
 	void Update () {
-	
+		timerToLeave -= Time.deltaTime;
+		if (timerToLeave < 0) {
+			Destroy(gameObject);
+		}
 	}
 }
