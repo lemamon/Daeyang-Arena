@@ -14,6 +14,7 @@ public class CameraFollow : MonoBehaviour {
 
 	}
 
+
 	void modeFocus () {
 		Vector3 vector;
 		vector = objectToFollow.transform.position;
