@@ -13,22 +13,9 @@ public class CameraFollow : MonoBehaviour {
 	void Start () {
 
 	}
+	
 
-
-	void modeFocus () {
-		Vector3 vector;
-		vector = objectToFollow.transform.position;
-		vector.z = -10;
-
-		vector = vector + (objectToFollow.transform.forward * vectorOffset.z) + 
-				(objectToFollow.transform.up * vectorOffset.y) + 
-				(objectToFollow.transform.right * vectorOffset.x);
-
-		transform.rotation = Quaternion.Lerp (transform.rotation, objectToFollow.transform.rotation, 0.3f);
-		transform.position = vector;
-	}
-
-	void modeScene(){
+	void followCar(){
 		Vector3 vector;
 		vector = objectToFollow.transform.position;
 		vector.z = -10;
@@ -43,11 +30,7 @@ public class CameraFollow : MonoBehaviour {
 	}
 
 	void Update () {
-		if (Mode == opitionsMode.Focus) {
-			modeFocus ();
-		} else if (Mode == opitionsMode.Scene){
-			modeScene();
-		}
+		followCar();
 
 	}
 

@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{39016219-791D-C5C4-D320-6DA33FAC48F4}</ProjectGuid>
+	<ProjectGuid>{AE99B45F-37AA-6113-75EC-848653117ED4}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,19 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Kits\Virtual Joystick\VirtualJoystick.cs" />
-     <Compile Include="Assets\Kits\Virtual Joystick\VirtualJoystickButton.cs" />
-     <Compile Include="Assets\Scripts\ArrowFollow.cs" />
-     <Compile Include="Assets\Scripts\Box.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\CameraShake.cs" />
-     <Compile Include="Assets\Scripts\Missile.cs" />
-     <Compile Include="Assets\Scripts\Oracle.cs" />
-     <Compile Include="Assets\Scripts\PowerUp.cs" />
-     <Compile Include="Assets\Scripts\Swipe.cs" />
+     <Compile Include="Assets\Scripts\Menu\Menu2Animation.cs" />
+     <Compile Include="Assets\Scripts\Menu\MenuAnimation.cs" />
      <Compile Include="Assets\Scripts\Vehicle.cs" />
-     <Compile Include="Assets\Scripts\VehicleCPU.cs" />
-     <Compile Include="Assets\Scripts\VehicleHUD.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
