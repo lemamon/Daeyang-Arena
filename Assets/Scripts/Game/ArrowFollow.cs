@@ -34,7 +34,7 @@ public class ArrowFollow : MonoBehaviour {
 		vector.Normalize ();
 		Vector3 newPosition = player.transform.position + vector * distance;
 		newPosition = new Vector3 (newPosition.x, newPosition.y, 5.0f);
-		transform.position = Vector3.Lerp(transform.position, newPosition, 0.1f);
+		transform.position = Vector3.Lerp(transform.position, newPosition, 0.05f);
 		transform.up = vector;
 	}
 
