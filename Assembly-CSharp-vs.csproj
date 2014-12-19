@@ -46,13 +46,28 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Game\ArrowFollow.cs" />
+     <Compile Include="Assets\Scripts\Game\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Game\HUD.cs" />
+     <Compile Include="Assets\Scripts\Game\Vehicle.cs" />
      <Compile Include="Assets\Scripts\Menu\Menu2Animation.cs" />
      <Compile Include="Assets\Scripts\Menu\MenuAnimation.cs" />
-     <Compile Include="Assets\Scripts\Vehicle.cs" />
+     <Compile Include="Assets\Scripts\Menu\OkSelect.cs" />
+     <Compile Include="Assets\Scripts\Menu\SelectCarClick.cs" />
+     <Compile Include="Assets\Scripts\Menu\TapToStartClick.cs" />
+     <Compile Include="Assets\Scripts\VirtualJoystick\VirtualJoystick.cs" />
+     <None Include="Assets\Plugins\Photon3Unity3D.xml" />
+     <None Include="Assets\Plugins\release_history.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
+ <Reference Include="Photon3Unity3D">
+ <HintPath>/Users/musicspectrum3/Desktop/Just Lemons/Daeyang Arena 2/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{D5548369-156E-7B19-6393-CA80BDFBCE05}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
