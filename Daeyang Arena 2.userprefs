@@ -1,10 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Menu/Menu2Animation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game/HUD.cs">
     <Files>
-      <File FileName="Assets/Scripts/Menu/MenuAnimation.cs" Line="15" Column="25" />
-      <File FileName="Assets/Scripts/Menu/Menu2Animation.cs" Line="31" Column="38" />
-      <File FileName="Assets/Scripts/CameraFollow.cs" Line="27" Column="3" />
+      <File FileName="Assets/Scripts/Game/HUD.cs" Line="14" Column="135" />
+      <File FileName="Assets/Scripts/VirtualJoystick/VirtualJoystick.cs" Line="84" Column="82" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
