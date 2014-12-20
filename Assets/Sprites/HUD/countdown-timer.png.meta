@@ -13,6 +13,8 @@ TextureImporter:
     21300016: countdown-timer_8
     21300018: countdown-timer_9
     21300020: countdown-timer_10
+    21300022: countdown-timer_11
+    21300024: countdown-timer_12
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -57,90 +59,130 @@ TextureImporter:
     - name: countdown-timer_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 43
-        width: 68
-        height: 121
+        x: 153
+        y: 597
+        width: 153
+        height: 199
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: countdown-timer_1
       rect:
         serializedVersion: 2
-        x: 135
-        y: 43
-        width: 76
-        height: 121
+        x: 306
+        y: 597
+        width: 153
+        height: 199
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: countdown-timer_2
       rect:
         serializedVersion: 2
-        x: 267
-        y: 42
-        width: 40
-        height: 122
+        x: 459
+        y: 597
+        width: 153
+        height: 199
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: countdown-timer_3
       rect:
         serializedVersion: 2
-        x: 370
-        y: 42
-        width: 71
-        height: 122
+        x: 153
+        y: 398
+        width: 153
+        height: 199
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: countdown-timer_4
       rect:
         serializedVersion: 2
-        x: 448
-        y: 42
-        width: 70
-        height: 122
+        x: 306
+        y: 398
+        width: 153
+        height: 199
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: countdown-timer_5
       rect:
         serializedVersion: 2
-        x: 530
-        y: 79
-        width: 23
-        height: 83
+        x: 459
+        y: 398
+        width: 153
+        height: 199
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: countdown-timer_6
       rect:
         serializedVersion: 2
-        x: 532
-        y: 41
-        width: 21
-        height: 31
+        x: 153
+        y: 199
+        width: 153
+        height: 199
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: countdown-timer_7
       rect:
         serializedVersion: 2
-        x: 370
-        y: 41
-        width: 183
-        height: 123
+        x: 306
+        y: 199
+        width: 153
+        height: 199
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: countdown-timer_8
       rect:
         serializedVersion: 2
-        x: 571
-        y: 152
-        width: 27
-        height: 25
+        x: 459
+        y: 199
+        width: 153
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: countdown-timer_9
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 0
+        width: 153
+        height: 199
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: countdown-timer_10
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 0
+        width: 153
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: countdown-timer_11
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 0
+        width: 153
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: countdown-timer_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 153
+        height: 199
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

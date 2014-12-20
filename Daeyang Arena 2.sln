@@ -5,6 +5,8 @@ Project("{BEA93700-D86F-A5D3-E76D-D308B2537B15}") = "Daeyang Arena 2", "Assembly
 EndProject
 Project("{BEA93700-D86F-A5D3-E76D-D308B2537B15}") = "Daeyang Arena 2", "Assembly-CSharp.csproj", "{AE99B45F-37AA-6113-75EC-848653117ED4}"
 EndProject
+Project("{BEA93700-D86F-A5D3-E76D-D308B2537B15}") = "Daeyang Arena 2", "Assembly-CSharp-Editor.csproj", "{FB91FB66-C7BD-51BC-B8CA-A34FE647895A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,15 @@ Global
 		{AE99B45F-37AA-6113-75EC-848653117ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE99B45F-37AA-6113-75EC-848653117ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE99B45F-37AA-6113-75EC-848653117ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB91FB66-C7BD-51BC-B8CA-A34FE647895A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB91FB66-C7BD-51BC-B8CA-A34FE647895A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB91FB66-C7BD-51BC-B8CA-A34FE647895A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB91FB66-C7BD-51BC-B8CA-A34FE647895A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																					GlobalSection(MonoDevelopProperties) = preSolution
+																																																	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

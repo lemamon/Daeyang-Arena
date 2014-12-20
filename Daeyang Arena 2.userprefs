@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game/HUD.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/VirtualJoystick/VirtualJoystick.cs">
     <Files>
-      <File FileName="Assets/Scripts/Game/HUD.cs" Line="14" Column="135" />
-      <File FileName="Assets/Scripts/VirtualJoystick/VirtualJoystick.cs" Line="84" Column="82" />
+      <File FileName="Assets/Scripts/VirtualJoystick/VirtualJoystick.cs" Line="14" Column="2" />
+      <File FileName="Assets/Scripts/Game/Vehicle.cs" Line="5" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -3,31 +3,34 @@ using System.Collections;
 
 public class VirtualJoystick: MonoBehaviour {
 
-
-	public GameObject Vehicle;
+	private GameObject Vehicle;
 	public GameObject ControlBase;
 	public GameObject ControlKnob;
 	public GameObject ControlAction;
 	public float ControlKnobRadius = 0.5f;
-	public float ControlBaseMargin = 0.5f;
+	public float ControlActionRadius = 0.5f;
 	public float maxSpeed = 5.0f;
 	public float Speed = 1.0f;
+	
+	public GameObject DefaultBulllet;
+	public GameObject PowerUp;
 
 	private bool knobTouchPresed = false;
 	private int knobFingerId = -1;
 	
 	void Start() {
+		RoundBehaviourScript RoundBehaviour = FindObjectOfType (typeof(RoundBehaviourScript)) as RoundBehaviourScript;
+		Vehicle = RoundBehaviour.PlayerVehicle;
+
+		Vector2 initiallPosition = Camera.main.transform.position;
+		initiallPosition = new Vector2 (initiallPosition.x,  - 1.7f);
+		transform.position = initiallPosition;	
 	}
 
-	void initWithAnimation () {
-
-		Vector2 joystickFinalPosition = Camera.main.ScreenToWorldPoint( new Vector3(0, 0, 0));
-		//Vector3 joystickFinalPosition = new Vector3 (ControlBase.transform.position.x, 0.0f, ControlBase.transform.position.z);
-		ControlBase.transform.position = Vector3.Lerp (ControlBase.transform.position, joystickFinalPosition, 0.35f);
-
-		Vector2 buttonFinalPosition = Camera.main.ScreenToWorldPoint( new Vector3(Screen.width, 0, 0));
-		ControlAction.transform.position = Vector3.Lerp (ControlAction.transform.position, buttonFinalPosition, 0.35f);
-
+	void withAnimation () {
+		Vector2 finalPosition = Camera.main.transform.position;
+		finalPosition = new Vector2 (finalPosition.x, finalPosition.y - 0.7f);
+		transform.position = Vector2.Lerp (transform.position, finalPosition, 0.15f);
 	}
 	
 	void Move (Vector2 vector) {
@@ -41,9 +44,17 @@ public class VirtualJoystick: MonoBehaviour {
 			Vehicle.transform.up = direction;
 	}
 
+	void launchAction () {
+	//	if (timerPowerUp > 0.0f) {
+	//			Instantiate (PowerUp, Vehicle.transform.position + Vehicle.transform.up / 2, Vehicle.transform.rotation);
+	//	} else {
+			Instantiate (DefaultBulllet, Vehicle.transform.position + Vehicle.transform.up / 2, Vehicle.transform.rotation);
+	//	}
+	}
+
 	void FixedUpdate() {
 
-	//	initWithAnimation ();
+		withAnimation ();
 
 		Move (ControlKnob.transform.localPosition);
 	
@@ -69,10 +80,17 @@ public class VirtualJoystick: MonoBehaviour {
 			if (Input.touchCount > 0) {
 				foreach (Touch touch in Input.touches){
 					Vector2 pos = Camera.main.ScreenToWorldPoint (touch.position);
-					float distance = Vector2.Distance (pos, ControlBase.transform.position);
-					if ( distance <= ControlKnobRadius) {
+					float distanceKnob = Vector2.Distance (pos, ControlBase.transform.position);
+					if ( distanceKnob <= ControlKnobRadius) {
 						knobFingerId = touch.fingerId;
 					} 
+
+					float distanceAction = Vector2.Distance (pos, ControlAction.transform.position);
+					if (distanceAction < ControlActionRadius){
+						launchAction();
+					}
+
+
 				}
 				updateKnob(Input.GetTouch (knobFingerId));
 			}

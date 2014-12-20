@@ -2,13 +2,14 @@
 using System.Collections;
 
 public class ArrowFollow : MonoBehaviour {
-
+	
+	private GameObject player;
 	public GameObject objectToFollow;
-	public GameObject player;
 	public float distance = 0.5f;
 
 	void Start () {
-	
+		RoundBehaviourScript RoundBehaviour = FindObjectOfType (typeof(RoundBehaviourScript)) as RoundBehaviourScript;
+		player = RoundBehaviour.PlayerVehicle;
 	}
 
 	void Update () {

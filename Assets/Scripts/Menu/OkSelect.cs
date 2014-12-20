@@ -19,16 +19,32 @@ public class OkSelect : MonoBehaviour {
 		TypeVehicle = selectedCar;
 	}
 
-	void Update () {
+	void Start () {
+	
+	}
 
-		Debug.Log ("selectedCar = " + TypeVehicle);
+
+	void FixedUpdate () {
+
+		if (Input.GetMouseButtonDown (0)) {
+			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+			RaycastHit hit;
+			if (Physics.Raycast (ray, out hit, 1000.0f)) {
+				if (hit.collider.gameObject == gameObject) {
+					PlayerPrefs.SetInt ("TypeVehicle", (int) TypeVehicle);
+					Application.LoadLevel("Level 1");
+				}
+			}
+		}
+
+		//Debug.Log ("selectedCar = " + TypeVehicle);
 
 		if (TypeVehicle == SelectCarClick.optionsVehicle.Car1) {
 			Vehicle1.GetComponent<Animator> ().SetBool ("car1", true);
-			Poster.GetComponent<Animator> ().SetBool ("poster1", true);
+			Poster.GetComponent<Animator> ().SetBool ("poster4", true);
 		} else {
 			Vehicle1.GetComponent<Animator> ().SetBool ("car1", false);
-			Poster.GetComponent<Animator> ().SetBool ("poster1", false);
+			Poster.GetComponent<Animator> ().SetBool ("poster4", false);
 		}
 		
 		if (TypeVehicle == SelectCarClick.optionsVehicle.Car2) {
@@ -41,18 +57,18 @@ public class OkSelect : MonoBehaviour {
 
 		if (TypeVehicle == SelectCarClick.optionsVehicle.Car3) {
 			Vehicle3.GetComponent<Animator> ().SetBool ("car3", true);
-			Poster.GetComponent<Animator> ().SetBool ("poster3", true);
+			Poster.GetComponent<Animator> ().SetBool ("poster1", true);
 		} else {
 			Vehicle3.GetComponent<Animator> ().SetBool ("car3", false);
-			Poster.GetComponent<Animator> ().SetBool ("poster3", false);
+			Poster.GetComponent<Animator> ().SetBool ("poster1", false);
 		}
 		
 		if (TypeVehicle == SelectCarClick.optionsVehicle.Car4) {
 			Vehicle4.GetComponent<Animator> ().SetBool ("car4", true);
-			Poster.GetComponent<Animator> ().SetBool ("poster4", true);
+			Poster.GetComponent<Animator> ().SetBool ("poster3", true);
 		} else {
 			Vehicle4.GetComponent<Animator> ().SetBool ("car4", false);
-			Poster.GetComponent<Animator> ().SetBool ("poster4", false);
+			Poster.GetComponent<Animator> ().SetBool ("poster3", false);
 		}
 		/*
 		if (TypeVehicle == SelectCarClick.optionsVehicle.Car5) {
