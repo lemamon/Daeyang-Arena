@@ -22,6 +22,7 @@ public class MenuAnimation : MonoBehaviour {
 		background.transform.position = new Vector3 (0, 0, 0);
 		gate.transform.position = new Vector2 (0, 0);
 		mainCamera.camera.orthographicSize = 5.0f;
+		mainCamera.camera.transform.position = new Vector3 (0, 0, -10.0f);
 		logo.transform.position = new Vector2 (0, 2);
 		logo.transform.localScale = new Vector3 (1, 1, 1);
 		tapToStart.SetActive (true);

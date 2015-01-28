@@ -7,7 +7,7 @@ public class RoundBehaviourScript : MonoBehaviour {
 
 	void Start () {
 		int TypeVehicle = PlayerPrefs.GetInt ("TypeVehicle");
-		Debug.Log (TypeVehicle);
+		Debug.Log ("TypeVehicle = "+TypeVehicle);
 		switch (TypeVehicle) {
 			case 0:
 				PlayerVehicle = GameObject.FindGameObjectWithTag("Vehicle1");

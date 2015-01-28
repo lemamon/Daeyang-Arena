@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using GooglePlayGames;
+using UnityEngine.SocialPlatforms;
 
 public class Menu2Animation : MonoBehaviour {
 	
@@ -16,9 +18,11 @@ public class Menu2Animation : MonoBehaviour {
 	private bool startAnimationAbout = false;
 	private bool startAnimationPlayReturn = false;
 	private bool startAnimationAboutReturn = false;
-
+    private AudioSource selectSound;
+   
 	void Start() {
 		StartCoroutine(prepareAnimation ());
+        selectSound = GetComponent<AudioSource>();
 	}
 
 	IEnumerator prepareAnimation () {
@@ -30,7 +34,7 @@ public class Menu2Animation : MonoBehaviour {
 		mainCamera.camera.orthographicSize = 4.5f;
 		wall.SetActive (true);
 		wall.transform.position = new Vector3 (0, 0, 0);
-		background.transform.position = new Vector3 (9.5f, 0, 0);
+		background.transform.position = new Vector3 (25.8f, 0, 0);
 		dark.transform.renderer.enabled = true;
 		yield return new WaitForEndOfFrame();
 		yield return new WaitForSeconds(0.15f);
@@ -97,6 +101,7 @@ public class Menu2Animation : MonoBehaviour {
 					startAnimationPlayReturn = false;
 					startAnimationAbout = false;
 					startAnimationAboutReturn = false;
+                //  Invoke("PlayAudio", 1.6f);
 				}
 				if(hit.collider.gameObject == playButtonReturn){
 					startAnimationPlay = false;
@@ -117,6 +122,7 @@ public class Menu2Animation : MonoBehaviour {
 						startAnimationAboutReturn = false;
 					}
 				}
+
 			}
 		}
 		
@@ -139,4 +145,8 @@ public class Menu2Animation : MonoBehaviour {
 		}
 
 	}
+
+    void PlayAudio() {
+        selectSound.Play();
+    }
 }

@@ -48,8 +48,9 @@ public class VirtualJoystick: MonoBehaviour {
 	//	if (timerPowerUp > 0.0f) {
 	//			Instantiate (PowerUp, Vehicle.transform.position + Vehicle.transform.up / 2, Vehicle.transform.rotation);
 	//	} else {
-			Instantiate (DefaultBulllet, Vehicle.transform.position + Vehicle.transform.up / 2, Vehicle.transform.rotation);
+      //  /*PhotonNetwork.*/Instantiate (DefaultBulllet, Vehicle.transform.position + Vehicle.transform.up / 2, Vehicle.transform.rotation);
 	//	}
+        GameObject bullet = PhotonNetwork.Instantiate("rocket", Vehicle.transform.position + Vehicle.transform.up / 2, Vehicle.transform.rotation, 0);
 	}
 
 	void FixedUpdate() {
@@ -116,10 +117,6 @@ public class VirtualJoystick: MonoBehaviour {
 				ControlKnob.transform.position += (ControlKnobRadius * posi);
 			}
 		}
-
+         
 	}
-
-
-
-
 }

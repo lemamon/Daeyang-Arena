@@ -4,9 +4,9 @@ using System.Collections;
 public class TapToStartClick : MonoBehaviour {
 
 	public GameObject nextScene;
-
+    private AudioSource sfx;
 	void Start () {
-	
+        sfx = GetComponent<AudioSource>();
 	}
 
 	IEnumerator goToNextScene(){
@@ -18,6 +18,7 @@ public class TapToStartClick : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButtonDown (0)) {
 			StartCoroutine (goToNextScene ());
+            sfx.Play();
 		}
 	}
 	

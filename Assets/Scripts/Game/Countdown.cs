@@ -8,9 +8,12 @@ public class Countdown : MonoBehaviour {
 	public GameObject Arrows;
 
 	private float timer = 4.5f;
-
+    private AudioSource sfx;
+    private AudioSource lvlSound;
 	void Start () {
-	
+        lvlSound = Camera.main.GetComponent<AudioSource>();
+        sfx = GetComponent<AudioSource>();
+        sfx.Play();
 	}
 
 	void Update () {
@@ -22,7 +25,8 @@ public class Countdown : MonoBehaviour {
 			HUD.SetActive(true);
 			Arrows.SetActive(true);
 			gameObject.SetActive(false);
-		}
+            lvlSound.Play();
+        }
 
 	}
 }
