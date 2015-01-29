@@ -39,7 +39,7 @@ public class Menu2Animation : MonoBehaviour {
 		yield return new WaitForEndOfFrame();
 		yield return new WaitForSeconds(0.15f);
 		StartCoroutine(blink ());
-
+		audioButton.GetComponent<Animator>().SetBool("start", PlayerPrefs.GetInt("sound") != 0 ? true : false);
 	}
 
 	IEnumerator blink () {
@@ -108,6 +108,10 @@ public class Menu2Animation : MonoBehaviour {
 					startAnimationPlayReturn = true;
 					startAnimationAbout = false;
 					startAnimationAboutReturn = false;
+				}
+				if(hit.collider.gameObject == audioButton){
+					PlayerPrefs.SetInt("sound", (PlayerPrefs.GetInt("sound") != 0?0:1));
+					audioButton.GetComponent<Animator>().SetBool("start",PlayerPrefs.GetInt("sound") != 0?true:false);
 				}
 				if(hit.collider.gameObject == aboutButton){
 					startAnimationPlay = false;
