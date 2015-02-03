@@ -279,6 +279,9 @@
      <Compile Include="Assets\Scripts\Pause Menu\PauseButton.cs" />
      <Compile Include="Assets\Scripts\Pause Menu\PlayButton.cs" />
      <Compile Include="Assets\Scripts\Power Up\DeafultBullet.cs" />
+     <Compile Include="Assets\Scripts\Power Up\PowerUpBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Power Up\PowerUpConst.cs" />
+     <Compile Include="Assets\Scripts\Power Up\PowerUpController.cs" />
      <Compile Include="Assets\Scripts\Social\PlayServicesAchievements.cs" />
      <Compile Include="Assets\Scripts\VirtualJoystick\VirtualJoystick.cs" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-el\common_strings.xml" />

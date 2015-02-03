@@ -8,6 +8,7 @@ public class SoundController : MonoBehaviour {
 		
 		void Update () {
 			AudioListener.pause = PlayerPrefs.GetInt("sound") != 0 ? false : true;
+			
 		}
 
 }
